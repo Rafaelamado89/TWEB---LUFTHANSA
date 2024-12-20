@@ -1,3 +1,8 @@
+@media only screen and (min-width: 992px){
+
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -119,6 +124,7 @@
 }
 
 
+
 /* Principal */
 .principal img {
     padding-left: 205px;
@@ -126,10 +132,66 @@
     height: auto;
 }
 
+/* SERVIÇOS GRID */
+.serviços{
+    margin-top: 15px;
+}
+
+.serviços h1 {
+    margin-left: 220px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
 
 
+.grid {
+    margin-left: 190px;
+    margin-top: 25px;
+    display:grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 300px 300px 300px 300px;
+    gap: 20px;
+    justify-content: center;
+    color: #05164d;
+}
+.grid a {
+    text-decoration: none;
+    color: #05164d;
+}
 
-/* Criar janela para submenu dropdown */
+.grid img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.grid h2{
+    font-weight: bold;
+}
+.grid p {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+
+/* PUBLICIDADE */
+
+.publicidade {
+    margin-top: 15px;
+    margin-left: 250px;
+}
+
+.publicidade a {
+    text-decoration: none;
+    color: #05164d;
+}
+
+.publicade p {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
 /* Organizar dropdown */
 
 /* Fazer table */
