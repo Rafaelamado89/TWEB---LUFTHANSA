@@ -155,10 +155,17 @@
     color: #05164d;
 }
 
+
+
 .guia img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
     border-radius: 0.5rem;
     margin-bottom: 0.625rem;
+}
+
+.guia img:hover {
+    cursor: pointer;
 }
 
 .guia .grid .overlay {
@@ -202,7 +209,7 @@
 .serviços .grid {
     margin-top: 1.6rem;
     display:grid;
-    grid-template-rows: 18.75rem;
+    grid-template-rows: 19.3rem;
     grid-template-columns: 18.75rem 18.75rem 18.75rem 18.75rem;
     gap: 1.25rem;
     justify-content: center;
@@ -226,6 +233,10 @@
 .serviços .grid p {
     margin-top: 0.95rem;
     font-size: 1.1rem;
+}
+
+.serviços .item-grid .texto {
+    padding-left: 1.3rem;
 }
 
 /* PUBLICIDADE */
@@ -282,8 +293,13 @@
     padding-left: 0.3rem;
     font-size: 1.7rem;
     border: none;
-    border-bottom: 0.2rem solid #05164d; /* Adiciona o sublinhado */
-    width: 8rem; 
+    border-bottom: 0.2rem solid #05164d;
+    width: 8rem;
+    color: #05164d;
+}
+
+.ofertas .item-grid {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .ofertas select:hover{
@@ -294,9 +310,7 @@
     text-decoration: none;
 }
 
-.ofertas .item-grid {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
+
 
 .ofertas .grid{
     padding-top: 1rem;
@@ -345,11 +359,22 @@
     font-size: 0.8rem;
 }
 
+/*Condiçoes*/
 
+.condiçoes2 {
+    margin-top: 50px;
+    font-size: 0.8rem;
+}
 
+.condiçoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20rem;
+}
 
-.ofertas .b1 {
-    padding-top: 2rem;
+.condiçoes .b1 {
+    margin-top: -4rem;
     display: flex;
     background-color: white;
     width: 130px;
@@ -360,67 +385,68 @@
 }
 
 
-.ofertas .b1:hover {
+.condiçoes .b1:hover {
     cursor: pointer;
 }
 
-.ofertas .b1 img {
+.condiçoes .b1 img {
     height: 1.5rem;
 }
 
-.ofertas .b1 p {
+.condiçoes .b1 p {
     font-size: 0.9rem; 
     font-family: Arial, sans-serif;
+    font-weight: bold;
 }
 
-.ofertas .b2 {
-    padding-top: 2rem;
+.condiçoes .b2 {
+    margin-top: 0;
     display: flex;
+    padding-top: -10rem;
     background-color: white;
     width: 280px;
-    height: 55px;
-    align-items: center; 
+    height: 50px; 
     gap: 8px;
     border: 2px solid #05164d;
     border-radius: 5px;
-
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    top:-4rem;
 }
 
-.ofertas .b2:hover {
+.condiçoes .b2:hover {
     cursor: pointer;
+    background-color: #05164d;
+    color: white;
 }
 
-.ofertas .b2 h1 {
-    font-size: 1rem;
+.condiçoes .b2 p {
+    font-size: 1.2rem;
     font-family: Arial, sans-serif;
 }
 
 
 
+/* Carrosel para grids */
 
-/* display: flex; 
-    align-items: center; 
-    gap: 8px; 
-    padding: 8px 16px; 
-    font-size: 14px; 
-    font-family: Arial, sans-serif; 
-    color: #333; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    background-color: #fff; 
-    cursor: pointer; Curso*/
+/* Drops checkin ... */
 
-
-
-
-
+/* Table */
 
 /* Organizar dropdown*/
 
+/* NAO ESQUECER SASS*/
+
+
+/* ZOOM IMAGENS - GUIA*/
+
+/* EFEITO SHADOW  GRIDS - OFERTAS*/
+
+
+
+
 /* Adicionar pointer em tudo */
 
-/* Fazer table */
-
-/* Inserir resto da informação - GRIDS */
-
-/* Java script para hover do select */
+/* Java script para  do select */
