@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="lufthansa.css">
-    <link rel="stylesheet" href="lufthansa.js">
+    
 </head>
 <body>
 
@@ -121,8 +121,141 @@
     
     <div class="principal">
         <img src="principal.jpg">
-
     </div>  
+
+    <!--Drops-->
+
+    <div class="drops">
+
+        <div class="item">
+            <button onclick="toggleDropdown(this)">
+                <div class="esquerda">
+                    <img src="checkin.png" width="16" height="16">
+                    <span class="titulo">Check-in</span>
+                </div>
+                <div class="plus">+</div>
+            </button>
+            <div class="dropmenus">
+                <button class="b1">
+                    Faça login para fazer o check-in
+                </button>
+
+                <button class="b2">
+                    Registrar
+                </button>
+
+                <a href="#">→ Outras opçoes de check-in</a>
+            </div>
+        </div>
+
+
+        <div class="item">
+            <button onclick="toggleDropdown(this)">
+                <div class="esquerda">
+                    <img src="estado.png" width="16" height="16">
+                    <span class="titulo">Estado do voo</span>
+                </div>
+                <div class="plus">+</div>
+            </button>
+            <div class="dropmenus">
+                <form>
+                    <div class="container">
+                        <div class="coluna">
+                            <label for="companhia">Companhia aérea</label>
+                            <select class="companhia">
+                                <option value="OS">OS</option>
+                                <option value="4Y">4Y</option>
+                                <option value="EN">EN</option>
+                                <option value="LX">LX</option>
+                                <option value="EW">EW</option>
+                                <option value="WK">WK</option>
+                                <option value="VL">VL</option>
+                                <option value="SN">SN</option>
+                                <option value="LH">LH</option>
+                            </select>
+                        </div>
+            
+                        <div class="coluna">
+                            <br><br>
+                            <label for="voo" class="hidden" id="voo-label">Número de voo</label>
+                            <input type="text" id="voo" placeholder="Número do voo" pattern="[0-9]+">
+                            <label for="dica">Dica sobre o numero de voo</label>
+                            
+                        </div>
+                    </div>
+                    <label for="data">Datas</label>
+                    <select id="data">
+                        <option value="26/12/2024">Qui 26/12/2024</option>
+                        <option value="27/12/2024">Sex 27/12/2024</option>
+                        <option value="28/12/2024">Sáb 28/12/2024</option>
+                        <option value="29/12/2024">Dom 29/12/2024</option>
+                        <option value="30/12/2024">Seg 30/12/2024</option>
+                        <option value="31/12/2024">Ter 31/12/2024</option>
+                        <option value="01/01/2025">Qua 01/01/2025</option>
+                    </select>
+        
+                    <button class="b3">Encontrar</button>
+                </form>
+                <a href="#">→ Pesquisar por rota ou aeroporto</a>
+            </div>
+        </div>
+
+
+        <div class="item">
+            <button onclick="toggleDropdown(this)">
+                <div class="esquerda">
+                    <img src="reservas.png" width="16" height="16">
+                    <span class="titulo">As minhas reservas</span>
+                </div>
+                <div class="plus">+</div>
+            </button>
+
+            <div class="dropmenus">
+                <div class="grupo">
+                    <a href="#" class="pesquisa">↗ Inicie sessão para ver todas as suas reservas</a>
+                </div>
+                <form>
+                    <div class="grupo">
+                      <label for="codigo" class="hidden" id="codigo-label">Código da reserva</label>
+                      <input type="text" id="codigo" name="codigo" placeholder="Código da reserva" required>
+                    </div>
+
+                    <div class="grupo">
+                      <label for="sobrenome" class="hidden" id="sobrenome-label">Sobrenome</label>
+                      <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+">
+                    </div>
+                </form>
+
+                <button class="b4">Encontrar reservas</button>
+            </div>
+        </div>
+
+
+        <div class="item">
+            <button onclick="toggleDropdown(this)">
+                <div class="esquerda">
+                    <img src="more.png" width="16" height="16">
+                    <span>Miles & More</span>
+                </div>
+                <div class="plus">+</div>
+            </button>
+            <div class="dropmenus">
+                <p class="p1">Efetue login com seus dados de login do Miles & More.</span><br><br>
+
+                <button class="b5">
+                    Conecte-se
+                </button>
+                
+                <p class="p2">Seus benefícios com Miles & More:</p><br>
+                <p class="p3">Ganhe milhas, salve suas preferências e exiba reservas rapidamente.</p><br>
+                <a href="#">→ Registrar</a>
+
+
+            </div>
+        </div>
+
+    </div>
+    
     
     <!--Guia-->
 
@@ -271,11 +404,28 @@
         </div>
 
         <div class="condiçoes">
-            <button class="b1">
+            <button id="open" class="b1">
                 <img src="condiçoes.png">
                 <p>Condições</p>
             </button>
             
+            <div id="alerta" class="alerta">
+                <div class="janela-alerta">
+                    <span class="close"></span>
+                    <h2>Condições gerais</h2>
+                    <p>
+                        Os preços apresentados podem variar e devem servir apenas de orientação para a sua viagem selecionada.
+                        Os preços aplicam-se a viagens de ida e volta ou só ida, conforme o que selecionou. O preço final está sujeito
+                        a alterações, dependendo da opção de pagamento selecionada. Os lugares são limitados e podem não estar disponíveis
+                        em todos os dias/voos. A tarifa pode estar disponível apenas durante uma época especial de viagem e pode não estar
+                        disponível durante as férias ou outras épocas de alta temporada. As tarifas incluem as taxas, sobretaxas e taxas
+                        de aeroporto aplicáveis. O preço final poderá não incluir a bagagem. Podem aplicar-se taxas de excesso de bagagem
+                        adicionais. A tarifa poderá não ser reembolsável ou alterável. Pode aplicar-se uma estadia mínima/estadia máxima
+                        e/ou compra antecipada.
+                    </p>
+                </div>
+            </div>
+
             <a href="#">
                 <button class="b2">
                     <p>Todas as ofertas e destinos</p>
@@ -285,6 +435,8 @@
 
      </div>
 
+    
+        <script src="lufthansa.js"></script>
 
      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
