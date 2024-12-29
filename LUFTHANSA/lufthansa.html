@@ -113,15 +113,269 @@
                         </li>
             </ul>
         </div>
-
-
     </div>
 
     <!--Voos-->
     
-    <div class="principal">
-        <img src="principal.jpg">
-    </div>  
+    <div class="background">
+    </div>
+    <div class="container-voos">
+        <!-- Tabs -->
+        <ul class="tabs">
+            <li class="active">Voos</li>
+            <li>Automóvel de aluguer</li>
+            <li>Hotel</li>
+        </ul>
+
+        <!--Search options-->
+
+        <!--TAB VOOS-->
+        <div class="tab-voos">
+            <div class="search-options">
+                <select>
+                    <option>Viagem de ida e volta</option>
+                    <option>Somente ida</option>
+                </select>
+                <button>Economy, 1 viajante</button>
+                <label>
+                    <input type="checkbox">
+                    <span>Apenas voos sem paragens</span>
+                </label>
+            </div>
+
+            <!-- Search form -->
+            <form class="search-form">
+                <div class="coluna">
+                    <label>De</label>
+                    <input type="text" placeholder="Lisboa">
+                </div>
+                <div class="coluna">
+                    <label>Para</label>
+                    <input type="text" placeholder="Para">
+                </div>
+                <div class="coluna">
+                    <label>Partida - regresso</label>
+                    <input type="date" placeholder="Partida - regresso">
+                </div>
+                <button type="submit">Procurar</button>
+            </form>
+        </div>
+
+        <!--TAB aluguer-->
+
+        <div class="tab-aluguer">
+            <form>
+                <div class="check-entrega">
+                    <label>
+                        <input type="checkbox">
+                        <span>Entregar o carro num local diferente</span>
+                    </label>
+                </div>
+
+        
+                <div class="form-row">
+                    <div class="form-column">
+                        <div class="tamanho3">
+                            <label>Local de recolha e entrega</label>
+                            <input type="text" id="pickup-location" placeholder="Pesquisar localização...">
+                        </div>
+                    </div>
+                
+                    <div class="form-column">
+                        <div class="tamanho2">
+                            <label>Data de recolha</label>
+                            <button>domingo, 29/12</button>
+                        </div>
+                    </div>
+                
+                    <div class="form-column">
+                        <div class="tamanho">
+                            <label class="tempo">Tempo</label>
+                            <select id="pickup-time">
+                                <option value="00:00">00:00</option>
+                                <option value="00:30">00:30</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:30">01:30</option>
+                                <option value="02:00">02:00</option>
+                                <option value="02:30">02:30</option>
+                                <option value="03:00">03:00</option>
+                                <option value="03:30">03:30</option>
+                                <option value="04:00">04:00</option>
+                                <option value="04:30">04:30</option>
+                                <option value="05:00">05:00</option>
+                                <option value="05:30">05:30</option>
+                                <option value="06:00">06:00</option>
+                                <option value="06:30">06:30</option>
+                                <option value="07:00">07:00</option>
+                                <option value="07:30">07:30</option>
+                                <option value="08:00">08:00</option>
+                                <option value="08:30">08:30</option>
+                                <option value="09:00">09:00</option>
+                                <option value="09:30">09:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option>
+                            </select>
+                        </div>
+                    </div>
+                
+                    <div class="form-column">
+                        <div class="tamanho2">
+                            <label>Data de entrega</label>
+                            <button>sábado, 4/01</button>
+                        </div>
+                    </div>
+                
+                    <div class="form-column">
+                        <div class="tamanho">
+                            <label id="tempo">Tempo</label>
+                            <select id="delivery-time">
+                                <option value="00:00">00:00</option>
+                                <option value="00:30">00:30</option>
+                                <option value="01:00">01:00</option>
+                                <option value="01:30">01:30</option>
+                                <option value="02:00">02:00</option>
+                                <option value="02:30">02:30</option>
+                                <option value="03:00">03:00</option>
+                                <option value="03:30">03:30</option>
+                                <option value="04:00">04:00</option>
+                                <option value="04:30">04:30</option>
+                                <option value="05:00">05:00</option>
+                                <option value="05:30">05:30</option>
+                                <option value="06:00">06:00</option>
+                                <option value="06:30">06:30</option>
+                                <option value="07:00">07:00</option>
+                                <option value="07:30">07:30</option>
+                                <option value="08:00">08:00</option>
+                                <option value="08:30">08:30</option>
+                                <option value="09:00">09:00</option>
+                                <option value="09:30">09:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option>
+                            </select>
+                        </div>  
+                    </div>
+                </div>
+                
+
+                <div class="form-row">
+                    <div class="check-entrega">
+                        <label>
+                            <input type="checkbox" checked>
+                            <span>Condutor com idade entre 30 - 69</span>
+                        </label>
+                    </div>
+            
+                    <div class="pais">
+                        <span>Moro em </span>
+                        <select>
+                            <option>Portugal</option>
+                            <option>Espanha</option>
+                            <option>França</option>
+                            <option>Alemanha</option>
+                            <option>Itália</option>
+                        </select>
+                    </div>
+
+                    <div class="button-pesquisa">
+                        <button type="submit">Pesquisar</button>
+                    </div>
+
+                </div>
+     
+        
+                <div class="nota">
+                    Tenha em atenção que as reservas e os alugueres são realizados junto da respetiva empresa de aluguer de automóveis. Não somos responsáveis pelas reservas e contratos de aluguer celebrados com as empresas de aluguer de automóveis, nem pelas suas condições e serviços.
+                </div>
+            </form>
+        </div>
+        
+        
+
+        <!--TAB Hotel-->
+
+        <div class="tab-hotel">
+            <form class="form-group">
+                <div class="coluna">
+                    <label for="destination">Destino</label>
+                    <input type="text" id="destination" placeholder="Destino">
+                </div>
+
+                <div class="coluna">
+                    <label for="checkin">Data de chegada</label>
+                    <input type="date" id="checkin" value="2024-12-28">
+                </div>
+
+                <div class="coluna">
+                    <label for="checkout">Data de partida</label>
+                    <input type="date" id="checkout" value="2024-12-29">
+                </div>
+            </form>
+            <br>    
+            <div class="nota">
+                As reservas de hotel podem ser concluídas com o nosso parceiro Booking.com e de forma independente com a reserva de voos da Lufthansa.
+            </div>
+            <div class="bhotel">
+                <button>Procurar hotel</button>
+            </div>
+        </div>
+
+        
+    </div>
+    
+
+
 
     <!--Drops-->
 
@@ -133,7 +387,7 @@
                     <img src="checkin.png" width="16" height="16">
                     <span class="titulo">Check-in</span>
                 </div>
-                <div class="plus">+</div>
+                <div class="plus"></div>
             </button>
             <div class="dropmenus">
                 <button class="b1">
@@ -437,10 +691,180 @@
 
     
         <script src="lufthansa.js"></script>
-
-     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
     </div>
+
+    <div class="container-drops">
+        <div class="title">Destinos mais procurados</div>
+        <div class="menu">
+            <div class="menu-item">
+                <h3>Descobrir a Europa</h3>
+                <div class="icon">&#9662;</div>
+                <div class="dropdown">
+                    <a href="#">Paris</a>
+                    <a href="#">Londres</a>
+                    <a href="#">Roma</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <h3>Cidades populares na Europa</h3>
+                <div class="icon">&#9662;</div>
+                <div class="dropdown">
+                    <a href="#">Berlim</a>
+                    <a href="#">Madrid</a>
+                    <a href="#">Praga</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <h3>Voar para a Europa a partir de Portugal</h3>
+                <div class="icon">&#9662;</div>
+                <div class="dropdown">
+                    <a href="#">Porto - Paris</a>
+                    <a href="#">Lisboa - Londres</a>
+                    <a href="#">Faro - Amsterdão</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <h3>Descobrir o mundo</h3>
+                <div class="icon">&#9662;</div>
+                <div class="dropdown">
+                    <a href="#">Nova Iorque</a>
+                    <a href="#">Tóquio</a>
+                    <a href="#">Dubai</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <h3>Pausas na cidade em todo o mundo</h3>
+                <div class="icon">&#9662;</div>
+                <div class="dropdown">
+                    <a href="#">Bangkok</a>
+                    <a href="#">Singapura</a>
+                    <a href="#">Hong Kong</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <h3>Voar para todo o mundo a partir de Portugal</h3>
+                <div class="icon">&#9662;</div>
+                <div class="dropdown">
+                    <a href="#">Lisboa - Nova Iorque</a>
+                    <a href="#">Porto - Rio de Janeiro</a>
+                    <a href="#">Faro - Sydney</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="social-pagamento">
+        <div class="metodos-pagamento">
+            <h3>Opções de pagamento</h3>
+            <div class="pagamento-images">
+                <img src="mastercard.png">
+                <img src="amex.png">
+                <img src="club.png">
+                <img src="jcb.png">
+                <img src="cash.png">
+            </div>
+        </div>
+    
+        <div class="follow-us">
+            <h3>Siga-nos</h3>
+            <div class="socials-icons">
+                <a href="#">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="#">
+                    <img src="youtube.png" alt="Twitter">
+                </a>
+                <a href="#">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="#">
+                    <img src="twitter.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="azul">
+
+        <div class="search-bar">
+            <input type="text" placeholder="Insira o termo de pesquisa">
+        </div>
+    
+        <div class="azul-footer">
+            <div class="footer-column">
+                <h3>Páginas visitadas frequentemente</h3>
+                <ul>
+                    <li><a href="#">Ver e alterar voos</a></li>
+                    <li><a href="#">Promoções e destinos</a></li>
+                    <li><a href="#">Bagagem</a></li>
+                    <li><a href="#">Check-in</a></li>
+                    <li><a href="#">No aeroporto</a></li>
+                    <li><a href="#">Instruções de viagem</a></li>
+                    <li><a href="#">Destinos</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h3>Serviço ao cliente</h3>
+                <ul>
+                    <li><a href="#">Conta Travel ID</a></li>
+                    <li><a href="#">Miles & More</a></li>
+                    <li><a href="#">Ajuda e Contacto</a></li>
+                    <li><a href="#">Lufthansa App</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Viagens acessíveis</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h3>Grupo Lufthansa</h3>
+                <ul>
+                    <li><a href="#">Empregos e carreiras</a></li>
+                    <li><a href="#">Grupo de aviação</a></li>
+                    <li><a href="#">Companhias aéreas</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                    <li><a href="#">Parceiros da Lufthansa</a></li>
+                    <li><a href="#">Sustentabilidade</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h3>Clientes empresariais</h3>
+                <ul>
+                    <li><a href="#">Agentes de viagens</a></li>
+                    <li><a href="#">Clientes empresariais</a></li>
+                    <li><a href="#">Programa de bonificação</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <a href="#">Ficha técnica</a>
+            <a href="#">Condições gerais de transporte</a>
+            <a href="#">Proteção de dados</a>
+            <a href="#">Direitos dos passageiros</a>
+            <a href="#">Termos de utilização</a>
+            <a href="#">Alterar definições dos cookies</a>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="lufthansa">
+                <img src="lufthansa.png">
+            </div>
+            <div class="star-alliance">
+                <img src="staralliance.png">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

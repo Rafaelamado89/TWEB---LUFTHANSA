@@ -21,6 +21,41 @@ document.addEventListener('click', function (event) {
     }
 });
 
+// Trocar entre TABS
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Inicializar as tabs
+    const tabs = document.querySelectorAll(".tabs li");
+    const contents = document.querySelectorAll(".container-voos > div");
+
+    // Definir o estado inicial
+    tabs.forEach((tab, index) => {
+        if (index === 0) {
+            tab.classList.add("active");
+            contents[index].style.display = "block";
+        } else {
+            contents[index].style.display = "none";
+        }
+    });
+
+    // Adicionar os eventos de clique nas abas
+    tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => {
+            tabs.forEach(item => item.classList.remove("active"));
+            tab.classList.add("active");
+
+            contents.forEach(content => content.style.display = "none");
+            contents[index].style.display = "block";
+        });
+    });
+});
+
+
+
+
+
+
+
 // Alterar entre + e - 
 
 document.querySelectorAll('.item button').forEach(button => {
