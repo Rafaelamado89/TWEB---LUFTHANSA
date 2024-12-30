@@ -4,11 +4,14 @@
     padding: 0;
 }
 
+
+
 .header {
     width: 100%;
     height: 8rem;
     background-color: #05164d;
     margin-top: 0;
+    
 }
 
 /*----------------
@@ -22,6 +25,10 @@
     font-family: Arial, Helvetica, sans-serif;
     padding-right: 18rem;
     padding-top: 1.5rem;
+}
+
+.menu1 li a {
+    font-size: 0;
 }
 
 .header a {
@@ -54,10 +61,12 @@
 -----------------*/
 
 .menu2 {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.3rem 18rem 0 14.4rem;
+    margin-bottom: 0.65rem;
 }
 
 .menu2 li {
@@ -75,51 +84,64 @@
     Dropdown Menu
 -----------------*/
 
-.dropmenu {
-    display: none;
-    position: absolute; 
-    background-color: white;
-    width: 100%;
-    padding: 1rem;  
-}    
+.menu2 .dropprincipal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
-.dropmenu h3 {
+.menu2 .dropprincipal {
+    display: flex;
+    background-color: #fff;
+    background-color: #05164d;
+    color:whitesmoke;
+}
+
+.menu2 .dropprincipal > li {
+    position: relative;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.menu2 .dropprincipal .dropmenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    background-color: white;
+    padding: 20px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.menu2 .dropprincipal > li:hover .dropmenu {
+    display: flex;
+}
+
+.menu2 .dropprincipal .dropmenu h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
     color: #05164d;
     text-decoration: underline;
-    text-decoration-color: gray;
-    margin-bottom: 0.6rem;
 }
 
-.submenu a {
-    color: gray;
-    display: block;
+.menu2 .dropprincipal .submenu {
+    margin: 0;
+    padding: 0;
+}
+
+.menu2 .dropprincipal .submenu li {
+    margin-bottom: 8px;
+}
+
+.menu2 .dropprincipal .submenu a {
     text-decoration: none;
-}
-
-.submenu a:hover {
-    color: black;
-    text-decoration: none;
-}
-
-.dropprincipal li:hover .dropmenu {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap:3rem;
-}
-
-.dropprincipal {
-    display: flex;
-    gap: 4.7rem;
-    justify-content: flex-end;
-}
-
-.dropprincipal li {
-    position: relative; 
-    list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #d3d4d6;
-    font-size: 1rem;
+    color: grey;
 }
 
 /*----------------
@@ -128,8 +150,6 @@
 
 .background {
     background-image: url("principal.jpg"); 
-    background-size: cover;
-    background-position: center;
     height: 500px;  
     margin: 0 10%;
     display: flex;
@@ -138,8 +158,8 @@
 }
 
 .container-voos {
-    max-width: 1200px;
-    margin: -300px auto 0 auto;
+    max-width: 75rem;
+    margin: -18.8rem auto 0 auto;
     padding: 20px;
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -152,6 +172,13 @@
     padding: 0;
     margin: 0 0 20px 0;
     border-bottom: 1px solid #ccc;
+    gap:5px
+}
+
+.tabs img {
+    height: auto;
+    position: relative;
+    top: 3px;
 }
 
 .tabs li {
@@ -219,7 +246,7 @@
 
 .search-form input {
     flex: 1;
-    width: 300px;
+    width: 19rem;
     padding: 8px;
     font-size: 14px;
     border: none;
@@ -809,7 +836,10 @@ label {
 }
 
 .ofertas .titulo select{
+    position: relative;
+    top:-5px;
     padding-left: 0.3rem;
+    padding-bottom: 0;
     font-size: 1.7rem;
     border: none;
     border-bottom: 0.2rem solid #05164d;
@@ -1135,6 +1165,9 @@ label {
     padding-bottom: 5px;
 }
 
+.azul .footer-column h3:hover {
+    cursor:pointer;
+}
 .azul .footer-column ul {
     list-style: none;
     padding: 0;
@@ -1147,21 +1180,20 @@ label {
 
 .azul .footer-column ul li a {
     text-decoration: none;
-    color: whitesmoke;
+    color: rgb(196, 195, 195);
     font-size: 15px;
 }
 
 .azul .footer-bottom {
     text-align: center;
     color: #a8c0f7;
-    padding-bottom: 15px;
     background-color: #05174d;
     padding-bottom: 2rem;
 }
 
 .azul .footer-bottom a {
     text-decoration: none;
-    color: whitesmoke;
+    color: rgb(196, 195, 195);
     margin: 0 10px;
     font-size: 14px;
     padding: 2rem;
@@ -1169,7 +1201,7 @@ label {
 }
 
 .azul .footer-bottom a:hover {
-    text-decoration: underline;
+    color:white;
 }
 
 .azul .search-bar {
@@ -1209,6 +1241,10 @@ label {
     margin-right: 20rem;
 }
 
+.footer img:hover {
+    cursor: pointer;
+}
+
 .footer-content {
     display: flex;
     justify-content: space-between;
@@ -1235,13 +1271,187 @@ label {
 }
 
 
+/* PUXAR TUDO PARA BAIXO */
 
-/* Carrosel para grids */
+.puxar {
+    margin-top:145rem;
+}
+
+
+
+
+/* -------------
+   Media querry
+--------------*/
+
+
+
+@media (max-width:1265px)
+{
+
+    .menu1 ul {
+        position: relative;
+        right:13rem
+    }
+    .menu2 > a img {
+        position: relative;
+        left:-13rem;        
+    }
+
+    .background {
+        margin: 0;
+    }
+
+    .container-voos {
+        max-width: 1000px;
+    }
+
+    .search-form input, .search-form button {
+        width: 13rem;
+    }
+
+
+    .drops {
+        margin-left:5rem;
+        margin-right:5rem;
+        display:grid;
+        grid-template-columns: 30rem 30rem;
+        gap:0;
+    }
+
+    .drops .item button {
+        width: 40rem;
+    }
+ 
+
+
+    .guia {
+        margin-left:5rem;
+        margin-right:5rem;
+    }
+
+    .guia .grid {
+        grid-template-rows: 14.4rem;
+        grid-template-columns: 34rem 34rem;
+    }
+
+
+
+    .serviços {
+        margin-left:5rem;
+        margin-right: 5rem;
+    }
+
+    .serviços h1 {
+        margin-left: -1.3rem;
+    }
+
+    .serviços .grid {
+        grid-template-rows: 17.5rem;
+        grid-template-columns: 16.25rem 16.25rem 16.25rem 16.25rem;
+    }
+
+
+    .publicidade {
+        margin-left:5rem;
+        margin-right:5rem;
+    }
+
+
+    .ofertas {
+        margin-left:5rem;
+        margin-right:5rem;
+    }
+
+    .ofertas .grid{
+        padding-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(9 , 22rem);
+        grid-template-rows: 30rem;
+        gap:1.3rem;
+    }
+
+    .ofertas img {
+        max-width: 18.75rem;
+        padding-left: 0.4rem;
+        padding-bottom: 10px;
+    }
+
+    .condiçoes .b2 {
+        margin-right: 5rem;
+        margin-left:43rem;
+    
+    }
+ 
+
+    .container-drops {
+        margin-left:5rem;
+        margin-right:5rem;
+    }
+
+
+
+    .social-pagamento {
+        margin-left: -5rem;
+    }
+
+    .social-pagamento h3 {
+        margin-left: -3rem;
+    }
+
+    .follow-us h3 {
+        margin-left: -11rem;
+    }
+
+
+
+    .azul .azul-footer {
+        margin-left: 2rem;
+        margin-right: 5rem;
+    }
+    
+    .azul .search-bar {
+        margin-left: 6.5rem;
+    }
+
+    .azul .footer-bottom {
+        display: flex;
+        flex-wrap: wrap; 
+        margin-left: 2rem;
+        margin-right: 5rem;
+        row-gap:5px;
+    }
+
+    .azul .footer-bottom a {
+        font-size: 15px;
+        padding-bottom: 0;
+        padding-top: 1rem;
+        padding-right: 7px;
+    }
+
+
+
+
+    .footer {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+
+}
+@media (max-width:1025px) 
+{
+    /* Sandwich menu 16.25 17.5*/ 
+}
+
+@media (max-width:765px)
+{
+    
+}
+
+
+
+
+/* Carrosel para grids*/
 
 /* Java para tabela */
-
-/* Organizar dropdown*/
-
-/* NAO ESQUECER SASS*/
-
-
