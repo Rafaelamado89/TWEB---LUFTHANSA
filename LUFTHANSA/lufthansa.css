@@ -1,0 +1,1694 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header {
+    width: 100%;
+    height: 8rem;
+    background-color: #05164d;
+    margin-top: 0;
+    
+}
+
+/*----------------
+    Media-header 
+-----------------*/
+
+.media-header {
+    display: none;
+    width: 100%;
+    height: 4rem;
+    background-color: #05164d;
+    margin-top: 0;
+}
+
+.media-menu {
+    display: flex;
+}
+.media-header .media-menu > a img {
+    margin-left:1rem;
+}
+
+.media-header .media-menu > a img:hover {
+    cursor:pointer;
+}
+
+.media-header .media-menu ul {
+    display: flex;
+    position: relative;
+    margin-left: 35rem;
+    margin-right:6rem;
+    margin-top:1rem;
+    gap:1rem;
+}
+
+.media-header .media-menu ul {
+    cursor:pointer;
+}
+
+.media-header .media-menu button {
+    border: none;
+    background: none;
+}
+
+.media-header .media-menu button {
+    cursor: pointer;
+}
+
+
+/* Side panel */
+
+.esconder-side-panel {
+    display: none;
+}
+
+.side-panel {
+    position:fixed;    
+    top:9%;
+    background-color: white;
+    width: 500px;
+    height: 100%;
+    right:0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap:5px
+}
+
+.side-panel button {
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid gray;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1rem;
+    font-size: 20px;
+    padding-top: 1rem;
+    padding-bottom:1rem;
+    color: #05164d;
+    font-weight: bold;
+}
+
+
+/*----------------
+    Menu 1 
+-----------------*/
+
+
+
+
+
+.menu1 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap:3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 19.3rem;
+    padding-top: 1.5rem;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header ul {
+    list-style: none;
+}
+
+.menu1 li img {
+    vertical-align: middle;
+    margin-right: 0.3rem;
+}
+
+.menu1 li a {
+    display: inline-flex;
+    align-items: center;
+    color: #DCDCDC;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.menu1 a:hover {
+    color: white;
+}
+/*----------------
+    Menu 2 
+-----------------*/
+
+.menu2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 18rem 0 14.4rem;
+    margin-bottom: 0.65rem;
+}
+
+.menu2 li {
+    cursor: pointer;
+}
+
+.menu2 li:hover {
+    color: white;
+}
+
+.menu2 > a img {
+    position: relative;
+    left: -4rem;
+}
+
+.menu2 img {
+    cursor: pointer;
+}
+/*----------------
+    Dropdown Menu
+-----------------*/
+
+.menu2 .dropprincipal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu2 .dropprincipal {
+    display: flex;
+    background-color: #fff;
+    background-color: #05164d;
+    color:whitesmoke;
+}
+
+.menu2 .dropprincipal > li {
+    position: relative;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.menu2 .dropprincipal .dropmenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    background-color: white;
+    padding: 20px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.menu2 .dropprincipal > li:hover .dropmenu {
+    display: flex;
+}
+
+.menu2 .dropprincipal .dropmenu h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #05164d;
+    text-decoration: underline;
+}
+
+.menu2 .dropprincipal .submenu {
+    margin: 0;
+    padding: 0;
+}
+
+.menu2 .dropprincipal .submenu li {
+    margin-bottom: 8px;
+}
+
+.menu2 .dropprincipal .submenu a {
+    text-decoration: none;
+    color: grey;
+}
+
+/*----------------
+    Principal 
+-----------------*/
+
+.background {
+    background-image: url("principal.jpg"); 
+    height: 500px;  
+    margin: 0 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-voos {
+    max-width: 65rem;
+    margin: -18.8rem auto 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.tabs {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #ccc;
+    gap:5px
+}
+
+.tabs img {
+    height: auto;
+    position: relative;
+    top: 3px;
+}
+
+.tabs li {
+    margin-right: 20px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.tabs li.active {
+    border-bottom: 2px solid blue;
+    font-weight: bold;
+}
+
+/*----------------
+   Search options 
+-----------------*/
+
+.search-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.search-options select {
+    border:none;
+    color: #05164d;
+    width: 10rem;
+    font-size: 12px;
+}
+
+.search-options button {
+    position: relative;
+    border: none;
+    background-color: white;
+    color: #05164d;
+    font-size: 14px;
+    top:-10px;
+}
+
+.search-options label span {
+    position: relative;
+    left: -22px;
+}
+
+.search-options button:hover {
+    cursor: pointer;
+}
+
+.search-options label {
+    display: inline-flex;
+    align-items: center;
+    width: 10rem;
+    font-size: 12px;
+    gap:10px;
+}
+
+/* Search form */
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-form input {
+    flex: 1;
+    width: 15rem;
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid #05164d;
+}
+
+.search-form button {
+    position: relative;
+    top:5px;
+    width: 10rem;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #05164d;
+    background-color: #ffad00;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* TAB aluguer */
+
+
+.tab-aluguer .check-entrega {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start; 
+    width: 100%;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.tab-aluguer .check-entrega input {
+   margin-left: -1rem;
+}
+
+.tab-aluguer .check-entrega span {
+    margin-left: -3.6rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+ }
+
+.tab-aluguer .linha2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.tab-aluguer .pais span {
+    color: #05164d;
+    font-weight: bold;
+}
+
+.tab-aluguer .pais select {
+    width: 100px;
+    border: none;
+    color: #05164d;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+.form-row .pais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.form-row .pais span {
+    margin-bottom: 1rem;
+}
+
+.form-row .button-pesquisa button {
+    margin-bottom: 2rem;
+}
+
+.form-column {
+    flex: 1;
+}
+
+.button-pesquisa {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.button-pesquisa button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #ffad00;
+    color: #05164d;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tab-aluguer .nota {
+    font-size: 14px;
+    color: #05164d;
+    font-weight: bold;
+    margin-top: 15px;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+
+.tab-aluguer .form-column {
+    gap:0px;
+}
+
+.tab-aluguer .form-column .tamanho select {
+    flex: 1;
+    width: 5rem;
+    font-size: 14px;
+    border: none;
+}
+
+.tab-aluguer .form-column .tamanho{
+    padding-top:1.88rem;
+}
+
+.tab-aluguer .form-column .tamanho2 button {
+    background-color: white;
+    flex: 1;
+    width: 7rem;
+    font-size: 14px;
+    border: none;
+}
+
+.tab-aluguer .form-column .tamanho2 button:hover {
+    cursor: pointer;
+}
+
+.tab-aluguer .form-column .tamanho3 input {
+    flex: 1;
+    width: 30rem;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid #05164d;
+}
+
+.tab-aluguer label {
+    color: #05164d;
+}
+
+/* TAB HOTEL */
+
+.tab-hotel .form-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tab-hotel .form-group input {
+    flex: 1;
+    width: 300px;
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid #05164d;
+}
+
+.tab-hotel button {
+    position: relative;
+    top:5px;
+    width: 10rem;
+    padding: 15px 25px;
+    font-size: 16px;
+    color: #05164d;
+    background-color: #ffad00;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tab-hotel .nota {
+    color: #05164d;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.tab-hotel .bhotel {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* DROPS */
+
+.drops {
+    margin-top: 5rem;
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 10rem;
+    margin-right: 12rem;
+}
+
+.drops .item {
+    display: inline-flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.drops .item button .esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.esquerda img {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0.3rem;
+}
+
+.drops .plus {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.drops .dropmenus button {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.3rem 0;
+    width: 0%;
+    cursor: pointer;
+}
+
+.drops .item button {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: none;
+    border-bottom: 0.1rem solid #05164d;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    width: 17rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.drops .item button:hover {
+    cursor: pointer;
+}
+
+.drops .dropmenus {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100%;
+    padding-bottom: 3.1rem;
+    padding: 1.3rem;
+    top:100%
+}
+
+.drops .dropmenus .b1 {
+    background-color: #ffad00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.drops .dropmenus button {
+    height: 3rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid #000;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    color:#05164d
+}
+
+.drops .dropmenus a {
+    text-decoration: none;
+    color: #05164d;
+    font-size: 1.1rem;
+}
+
+.drops .dropmenus span {
+    color: #05164d;
+    font-size: 1.1rem;
+}
+
+.drops .dropmenus .p1 {
+    color: #05164d;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+.drops .dropmenus .p2 {
+    color: #05164d;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.drops .dropmenus .p3 {
+    color: #05164d;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.drops .dropmenus p{
+    color: #05164d;
+    font-size: 1.1rem;
+    font-weight: 50;
+}
+
+.drops .dropmenus .b5 {
+    background-color: #ffad00;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+select, input {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+    font-size: 1rem;
+}
+
+
+select {
+    background: white;
+    background-size: 0.6rem;
+    border: none;
+    border-bottom: 2px solid #05164d ;
+    
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+.drops .dropmenus .b2 {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.drops .dropmenus .b3 {
+    background-color: #ffad00;
+    width: 50%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    
+    display: flex;
+    align-items: center;
+    padding-right: 1.3rem;
+    gap: 1.9rem;
+}
+
+.drops .coluna {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.dropmenus button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.hidden {
+    display: none;
+}
+
+.grupo {
+    margin-bottom: 2.2rem;
+}
+
+.grupo a {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.drops .dropmenus .grupo {
+    padding-right: 3.1rem;
+}
+
+.drops .dropmenus .grupo input {
+    border: none;
+    border-bottom: 2px solid #05164d;
+}
+
+.drops .dropmenus .b4 {
+    background-color: #ffad00;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+
+
+/* GUIA */
+
+.guia {
+    margin-top: 1rem;
+}
+
+.guia a {
+    text-decoration: none;
+    color: #05164d;  
+}
+
+.guia .grid {
+    position: relative;
+    margin-top: 1.5rem;
+    display:grid;
+    grid-template-rows: 16rem;
+    grid-template-columns: 36rem 36rem;
+    gap: 1.25rem;
+    justify-content: center;
+    color: #05164d;
+}
+
+
+
+.guia img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 0.625rem;
+}
+
+.guia img:hover {
+    cursor: pointer;
+}
+
+.guia .grid .overlay {
+    position: absolute;
+    top:10%;
+    padding-left: 2.5rem;
+    align-items: center;
+}
+
+.guia .item-grid1 .overlay{
+    color:white;
+}
+
+
+.guia h2 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.guia p {
+    font-size: 1.5rem;
+}
+
+
+
+/* SERVIÇOS GRID */
+.serviços{
+    margin-top: 3.1rem;
+}
+
+.serviços h1 {
+    margin-left: 11rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.serviços .item-grid {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.serviços .grid {
+    margin-top: 1.6rem;
+    display:grid;
+    grid-template-rows: 19.3rem;
+    grid-template-columns: 17.5rem 17.5rem 17.5rem 17.5rem;
+    gap: 1.25rem;
+    justify-content: center;
+    color: #05164d;
+}
+
+.serviços a {
+    text-decoration: none;
+    color: #05164d;
+}
+
+.serviços .grid img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 0.625rem;
+}
+
+.serviços .grid h2{
+    font-weight: bold;
+}
+.serviços .grid p {
+    margin-top: 0.95rem;
+    font-size: 1.1rem;
+}
+
+.serviços .item-grid .texto {
+    padding-left: 1.3rem;
+}
+
+/* PUBLICIDADE */
+
+.publicidade {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 2rem; 
+    margin-top: 4.5rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+.imagem-texto{
+    display: flex;
+    gap:0.3rem;
+}
+
+.publicidade .item {
+    max-width: 25rem;
+    height: auto;
+}
+
+.publicidade a {
+    text-decoration: none;
+    color: #05164d;
+}
+
+.publicidade p {
+    font-size: 1.1rem;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 2.5rem;
+}
+
+/* Ofertas */
+
+.ofertas {
+    padding-top: 3rem;
+    margin-left: 10.7rem;
+}
+
+.ofertas .titulo {
+    display: flex;
+    flex-direction: row;
+    color:#05164d;
+}
+
+.ofertas option {
+    font-size: 1rem;
+}
+
+.ofertas .titulo select{
+    position: relative;
+    top:-5px;
+    padding-left: 0.3rem;
+    padding-bottom: 0;
+    font-size: 1.7rem;
+    border: none;
+    border-bottom: 0.2rem solid #05164d;
+    width: 8rem;
+    color: #05164d;
+}
+
+.ofertas .item-grid {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.ofertas select:hover{
+    cursor: pointer;
+}
+
+.ofertas a {
+    text-decoration: none;
+}
+
+
+
+.ofertas .grid{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(9 , 23.5rem);
+    grid-template-rows: 31.5rem;
+    gap:1.5rem;
+}
+
+.ofertas h2{
+    font-size: 1.3rem;
+    color: #05164d;
+}
+
+.ofertas .item-grid h1{
+    font-size: 1.5rem;
+    color: #05164d;    
+}
+
+.ofertas img {
+    max-width:21rem;
+}
+
+.ofertas .item-grid{
+    position: relative;
+    padding: 1.25rem;
+    padding-bottom: 3.1rem;
+}
+
+.ofertas .item-grid p {
+    color: #05164d;  
+}
+
+.ofertas .preço h1 {
+    position: absolute;
+    bottom: 1.3rem;
+    right: 1.25rem;
+    font-weight: bold;
+}
+
+.ofertas .preço p {
+    position: absolute;
+    bottom: 1.45rem;
+    right: 5.5rem;
+}
+
+
+.ofertas .condiçoes {
+    padding-top: 3rem;
+    font-size: 0.8rem;
+}
+
+/*Condiçoes*/
+
+.condiçoes2 {
+    margin-top: 3.1rem;
+    font-size: 0.8rem;
+}
+
+.condiçoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20rem;
+}
+
+.condiçoes .b1 {
+    margin-top: -4rem;
+    display: flex;
+    background-color: white;
+    width: 8.1rem;
+    height: 2.5rem;
+    align-items: center; 
+    gap: 0.5rem;
+    border: none;
+}
+
+
+.condiçoes .b1:hover {
+    cursor: pointer;
+}
+
+.condiçoes .b1 img {
+    height: 1.5rem;
+}
+
+.condiçoes .b1 p {
+    font-size: 0.9rem; 
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.alerta {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.alerta h2 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.alerta p {
+    font-size: 1.3rem;
+    color: #05164d;
+    font-weight: 100;
+}
+
+.janela-alerta {
+    background-color: #fff;
+    padding: 1.25rem;
+    border-radius: 0.3rem;
+    width: 80%;
+    width: 82.5rem;
+    height: 20.6rem;
+    text-align: left;
+    box-shadow: 0 4px 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    float: right;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close:hover {
+    color: #000;
+}
+
+
+
+
+.condiçoes .b2 {
+    margin-right:5rem;
+    margin-left:49.5rem;
+    margin-top: 0;
+    display: flex;
+    padding-top: -10rem;
+    background-color: white;
+    width: 17.5rem;
+    height: 3.1rem; 
+    gap: 0.5rem;
+    border: 2px solid #05164d;
+    border-radius: 0.3rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+    position: relative;
+    top:-4rem;
+}
+
+.condiçoes .b2:hover {
+    cursor: pointer;
+    background-color: #05164d;
+    color: white;
+}
+
+.condiçoes .b2 p {
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+}
+
+/* Container drops */
+
+.container-drops {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 28px;
+    margin-bottom: 3.5rem;
+    color: #001a49;
+}
+
+.container-drops .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.container-drops .menu-item {
+    border: none;
+    padding: 15px;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+}
+
+.container-drops .menu-item h3 {
+    font-size: 16px;
+    color: #001a49;
+    margin: 0;
+    padding: 0;
+}
+
+.container-drops .menu-item .icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 16px;
+    color: #001a49;
+}
+
+.container-drops .menu-item .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: none;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.container-drops .menu-item:hover .dropdown {
+    display: block;
+}
+
+.container-drops .dropdown a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #001a49;
+    font-size: 14px;
+}
+
+
+/* Metodos de pagamento */
+
+.social-pagamento {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    color: white;
+    padding: 20px;
+    margin-left:-7rem;
+    margin-right:3rem;
+}
+
+.social-pagamento h3 {
+    color: #05174d;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 20px;
+    margin-left:-3rem;
+}
+
+.metodos-pagamento, .follow-us {
+    text-align: center;
+}
+
+.follow-us h3 {
+    color: #05174d;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size:20px;
+    margin-left: -10.5rem;
+}
+
+.pagamento-images img, .socials-icons img {
+    margin: 0 10px;
+    height: 30px;
+}
+
+.socials-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Azul */
+
+.azul {
+    background-color: #05174d;
+}
+
+.azul .azul-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+    margin-right: 3rem;
+    margin-left: 3rem;            
+}
+
+.azul .footer-column {
+    max-width: 200px;
+}
+
+.azul .footer-column h3 {
+    color:white;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+.azul .footer-column h3:hover {
+    cursor:pointer;
+}
+.azul .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.azul .footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.azul .footer-column ul li a {
+    text-decoration: none;
+    color: rgb(196, 195, 195);
+    font-size: 15px;
+}
+
+.azul .footer-bottom {
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 10rem;
+    margin-right:10rem;
+    color: #a8c0f7;
+    background-color: #05174d;
+    margin-bottom: 2rem;
+    row-gap:5px;
+    gap:3rem;
+}
+
+.azul .footer-bottom a {
+    text-decoration: none;
+    color: rgb(196, 195, 195);
+    font-size: 14px;
+    padding-bottom: 2rem;
+    
+}
+
+.azul .footer-bottom a:hover {
+    color:white;
+}
+
+.azul .search-bar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top:1rem;
+    color: rgb(139, 121, 121);
+    margin-left: 10.5rem;
+}
+
+.azul .search-bar input {
+    width: auto;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #a8c0f7;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.azul .search-bar input::placeholder {
+    color: whitesmoke;
+}
+
+/* Footer */
+
+.footer {
+    height: 5rem;
+    padding: 10px 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 9rem;
+    margin-right: 9rem;
+}
+
+.footer img:hover {
+    cursor: pointer;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.lufthansa img {
+    height: 40px;
+}
+
+.star-alliance {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.star-alliance img {
+    height: 30px;
+    width: 200px;
+    margin-left: 10px;
+}
+
+
+/* PUXAR TUDO PARA BAIXO */
+
+.puxar {
+    margin-top:145rem;
+}
+
+
+/* Caixa tab */
+
+
+.caixa-tab {
+    display:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.caixa-tab .caixa-open select {
+    margin:50px;
+    width:100px;
+}
+
+.caixa-tab .caixa-open span {
+    margin-left:50px;
+    position: relative;
+    top:-20px;
+}
+
+.caixa-tab .caixa-open label {
+    margin-left:50px;
+    position: relative;
+    top:50px;
+    color: #05164d;
+    font-size: 13px;
+}
+
+.caixa-open {
+    background-color: #fff;
+    padding: 1.25rem;
+    border-radius: 0.3rem;
+    width: 80%;
+    margin-left:5%;
+    width: 82.5rem;
+    height: 20.6rem;
+    text-align: left;
+    box-shadow: 0 4px 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.caixa-close {
+    float: right;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.caixa-close:hover {
+    color: #000;
+}
+
+
+/* -------------
+   Media querry
+--------------*/
+
+
+
+@media (max-width:1265px)
+{
+
+    .menu1 ul {
+        padding-right: 14.6rem;
+    }
+
+    .menu2 > a img {
+        position: relative;
+        left:-13rem;        
+    }
+
+    .background {
+        margin: 0;
+    }
+
+    .container-voos {
+        max-width: 1000px;
+    }
+
+    .search-form input, .search-form button {
+        width: 13rem;
+    }
+
+
+    .drops {
+        margin-left:5rem;
+        margin-right:5rem;
+        display:grid;
+        grid-template-columns: 30rem 30rem;
+        gap:0;
+    }
+
+    .drops .item button {
+        width: 40rem;
+    }
+ 
+
+
+    .guia {
+        margin-left:5rem;
+        margin-right:5rem;
+    }
+
+    .guia .grid {
+        grid-template-rows: 14.4rem;
+        grid-template-columns: 34rem 34rem;
+    }
+
+
+
+    .serviços {
+        margin-left:5rem;
+        margin-right: 5rem;
+    }
+
+    .serviços h1 {
+        margin-left: -1.3rem;
+    }
+
+    .serviços .grid {
+        grid-template-rows: 17.5rem;
+        grid-template-columns: 16.25rem 16.25rem 16.25rem 16.25rem;
+    }
+
+
+    .publicidade {
+        margin-left:5rem;
+        margin-right:5rem;
+    }
+
+
+    .ofertas {
+        margin-left:5rem;
+        margin-right:5rem;
+    }
+
+    .ofertas .grid{
+        padding-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(9 , 22rem);
+        grid-template-rows: 30rem;
+        gap:1.3rem;
+    }
+
+    .ofertas img {
+        max-width: 18.75rem;
+        padding-left: 0.4rem;
+        padding-bottom: 10px;
+    }
+
+    .condiçoes .b2 {
+        margin-right: 5rem;
+        margin-left:43rem;
+    
+    }
+ 
+
+    .container-drops {
+        margin-left:5rem;
+        margin-right:5rem;
+    }
+
+
+
+    .social-pagamento {
+        margin-left: -5rem;
+    }
+
+    .social-pagamento h3 {
+        margin-left: -3rem;
+    }
+
+    .follow-us h3 {
+        margin-left: -11rem;
+    }
+
+
+
+    .azul .azul-footer {
+        margin-left: 2rem;
+        margin-right: 5rem;
+    }
+    
+    .azul .search-bar {
+        margin-left: 6.5rem;
+    }
+
+    .azul .footer-bottom {
+        display: flex;
+        flex-wrap: wrap; 
+        margin-left: 2rem;
+        margin-right: 5rem;
+        row-gap: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .azul .footer-bottom a {
+        font-size: 15px;
+        padding-bottom: 1.5rem;
+        padding-top: 1rem;
+        padding-right: 7px;
+    }
+
+
+
+
+    .footer {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+
+}
+@media (max-width:1025px) 
+{
+
+    .media-header {
+    display: block;
+    }
+
+   .header .menu1 {
+    display: none;
+   }
+
+   .header .menu2 {
+    display: none;
+   }
+
+   .container-voos {
+    max-width: 800px;
+   }
+
+   .search-form input, .search-form button {
+    width:11rem;
+   }
+
+   .tab-aluguer .form-row .form-column .tamanho3 input {
+    width: 18rem;
+   }
+
+   .tab-hotel .form-group .coluna input {
+    width: 14rem;
+   }
+
+   .drops {
+    margin-left:5rem;
+    margin-right:50rem;
+    display:grid;
+    grid-template-columns: 25rem 25rem;
+    gap:1rem;
+    }
+
+    .drops .item button {
+    width: 27rem;
+    }
+
+    .guia .grid {
+    grid-template-rows: 13.5rem;
+    grid-template-columns: 25.5rem 25.5rem;
+    }
+
+    .guia .grid .item-grid1 .overlay h2 {
+        font-size: 14px ;
+    }
+
+
+
+    .serviços .grid {
+        grid-template-rows: 23rem 23rem;
+        grid-template-columns: 25.5rem 25.5rem;
+    }
+
+    .serviços .grid .item-grid img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .publicidade {
+        margin-left:3rem;
+        margin-right:3rem;
+    }
+
+    .ofertas .grid {
+        padding-top: 1rem;
+        display:grid;
+        grid-template-rows: 25rem;
+        grid-template-columns: repeat(3 , 17rem);
+        gap:1.3rem;
+    }
+
+    .ofertas img {
+        width: 100%;
+        padding-left:0.1rem
+    }
+
+    .condiçoes .b2 {
+        position:relative;
+        top:-2rem;
+        right:15rem;
+    }
+
+    .puxar {
+        padding-top:10rem;
+    }
+}
+
+
+/* Java para tabela */
